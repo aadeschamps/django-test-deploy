@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>Django</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+		<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
+	</head>
+
+	<body>
+		
+	<div class="container">
+	<h1>Hello, World</h1>
+	<div class="break"></div>
+	{% for post in posts %}
+	<br>
+	<div class='col-sm-12'>
+		<p>published: {{ post.date_published }}</p>
+		<h1><a href="/blog/{{post.id}}">{{ post.title }}</a></h1>
+		<p>{{ post.content }}</p>
+	</div>
+	{% endfor %}
+
+	</div>
+
+	</body>
+</html>

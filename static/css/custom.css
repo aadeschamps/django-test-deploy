@@ -1,0 +1,36 @@
+body{
+
+	text-align: center;
+
+}
+
+.break{
+
+	margin-top: 50px;
+
+}
+
+h1 {
+
+	color: red;
+	text-align: center;
+
+}
+
+h1:hover{
+
+	color: orange;
+
+}
+
+a {
+
+	color: blue;
+
+}
+a:hover{
+
+	text-decoration: none;
+	color: blue;
+
+}
